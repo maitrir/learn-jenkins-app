@@ -26,7 +26,10 @@ pipeline {
                 sh '''
                 echo "Test Stage2"
                 test -d build
+                npm --version
+                ls-la
                 npm test
+
                 '''
             }
         }
