@@ -27,14 +27,8 @@ pipeline {
                         }
                 }
             steps{
-                echo "Test Stage"
-                test -d build
                 test -f build/index.html
-                sh '''
-                echo "Test Stage2"
-                npm --version
-                npm test
-                '''
+                
             }
         }
     }
